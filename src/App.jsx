@@ -27,8 +27,8 @@ function App() {
     <>
    
    <div className="calculator">
-      <input type="text" value={input} readOnly />
-      <div className="result">{result}</div>
+      <input type="text" value={input || result} readOnly />
+      
       <div className="buttons">
         <button onClick={() => handleButtonClick('7')}>7</button>
         <button onClick={() => handleButtonClick('8')}>8</button>
